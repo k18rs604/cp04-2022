@@ -33,6 +33,7 @@
     
     #mycanvas {
         color: #ffffff;
+        background-color: skyblue;
         font-size: 40px;
         text-align: center;
         position:absolute; top:10px; 
@@ -63,5 +64,5 @@
         font-size: 30px;
         position:absolute; top:450px; left:190px; width:80px; height:40px;   
     }
-    
+
     input[type=number] {text-align: right;}
