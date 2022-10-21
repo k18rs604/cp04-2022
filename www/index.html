@@ -222,6 +222,9 @@
           analog(rest);
         }
         if(rest <= 0){
+            var audio = new Audio();
+            audio.src = "pin.wav";
+            audio.play();
           rest = period;
           $("#remain").html("残り時間：" + period);
           startTime = new Date();
