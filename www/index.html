@@ -201,6 +201,15 @@
         $("#remain").html("残り時間：" + period);
         
     }
+
+    function btnnoodleClick(e){
+        alarm();
+        active = false;
+        period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
+        $("#time").html("経過時間：0");
+        $("#remain").html("残り時間：" + period);
+        
+    }
     
  
     // 繰り返し実行する処理
@@ -213,7 +222,9 @@
           analog(rest);
         }
         if(rest <= 0){
-          active = false;
+          rest = period;
+          $("#remain").html("残り時間：" + period);
+          startTime = new Date();
         }
         
     } 
